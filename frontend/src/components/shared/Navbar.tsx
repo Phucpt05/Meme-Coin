@@ -4,7 +4,7 @@ import { ConnectButton } from "@mysten/dapp-kit";
 const NavBar: React.FC = () => {
 
   return (
-    <nav className="bg-transparent p-4 shadow-md w-full">
+    <nav className="bg-transparent p-4 shadow-md w-full font-inter">
       <div className="flex justify-end">
         <ConnectButton />
       </div>

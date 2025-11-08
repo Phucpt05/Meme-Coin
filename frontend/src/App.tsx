@@ -15,7 +15,7 @@ const Pages: React.FC = () => {
     case "/wallet":
       return <WalletView />
     default:
-      return <div className="text-center">Page not found!</div>;
+      return <div className="text-center font-inter">Page not found!</div>;
   }
 };
 

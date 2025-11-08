@@ -32,7 +32,7 @@ export const SuiObject: React.FC<ObjectProps> = ({ objectId }) => {
   const balance = isCoin ? (objectDetails.data?.content as any)?.fields?.balance : null;
 
   return (
-    <div className="p-2 border rounded-lg bg-gray-50 dark:bg-gray-800">
+    <div className="p-2 border rounded-lg bg-gray-50 dark:bg-gray-800 font-inter">
       <p className="text-gray-700 dark:text-gray-300">
         <strong>Object ID:</strong> {objectId}
       </p>

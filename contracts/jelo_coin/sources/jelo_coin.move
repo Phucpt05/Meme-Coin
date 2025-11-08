@@ -26,7 +26,6 @@ public struct Locker has key, store {
 const TOTAL_SUPPLY: u64 = 1_000_000_000_000_000_000;
 const INITIAL_SUPPLY: u64 = 900_000_000_000_000_000;
 
-// 400_000_000_000_000_000
 
 fun init(otw: JELO, ctx: &mut TxContext) {
     let (treasury, metadata) = coin::create_currency(

@@ -28,7 +28,7 @@ export const OwnedObjects = () => {
   }
 
   return (
-    <div className="flex flex-col my-4 space-y-4">
+    <div className="flex flex-col my-4 space-y-4 font-inter">
       {data.data.length === 0 ? (
         <p className="text-gray-700 dark:text-gray-300">
           No objects owned by the connected wallet

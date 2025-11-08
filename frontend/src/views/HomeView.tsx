@@ -1,11 +1,13 @@
 import { FC } from "react";
 import NavBar from "../components/shared/Navbar";
+import { JeloInfo } from "../components/JeloInfo";
+import { MintButton } from "../components/MintButton";
 
 const HomeView: FC = () => {
   return (
     <>
       <div
-        className="min-h-screen flex flex-col items-center text-white bg-cover bg-center bg-fixed"
+        className="min-h-screen flex flex-col items-center text-white bg-cover bg-center bg-fixed font-inter"
         style={{
           backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/jelo_bg.png')",
         }}
@@ -161,6 +163,14 @@ const HomeView: FC = () => {
             <button className="bg-gradient-to-r from-purple-400 to-pink-400 hover:from-purple-500 hover:to-pink-500 text-white px-10 py-5 rounded-full shadow-lg text-xl font-semibold transform hover:scale-105 transition-all">
               Join Community
             </button>
+          </div>
+        </div>
+
+        {/* JELO Info and Mint Section */}
+        <div className="w-full bg-gradient-to-r from-black/10 to-black/10 backdrop-blur-[2px] py-12 px-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <JeloInfo />
+            <MintButton />
           </div>
         </div>
       </div>
